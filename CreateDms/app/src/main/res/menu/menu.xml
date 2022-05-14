@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_sl"
+        android:icon="@drawable/ic_food"
+        android:title="급식" />
+
+    <item
+        android:id="@+id/menu_application"
+        android:icon="@drawable/ic_check"
+        android:title="신청" />
+
+    <item
+        android:id="@+id/menu_notice"
+        android:icon="@drawable/ic_notification"
+        android:title="공지" />
+
+    <item
+        android:id="@+id/menu_myPage"
+        android:icon="@drawable/ic_person"
+        android:title="마이페이지" />
+
+</menu>
