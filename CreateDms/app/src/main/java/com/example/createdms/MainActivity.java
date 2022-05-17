@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int id = item.getItemId();
 
-                switch (id){
+                switch (id) {
                     case R.id.menu_sl:
                         transaction.replace(R.id.menu_frame_layout, fragmentSchoolLunch).commitAllowingStateLoss();
                         break;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.replace(R.id.menu_frame_layout, fragmentApplication).commitAllowingStateLoss();
                         break;
                     case R.id.menu_notice:
-                        transaction.replace(R.id.menu_frame_layout,fragmentNotice).commitAllowingStateLoss();
+                        transaction.replace(R.id.menu_frame_layout, fragmentNotice).commitAllowingStateLoss();
                         break;
                     case R.id.menu_myPage:
                         transaction.replace(R.id.menu_frame_layout, fragmentMyPage).commitAllowingStateLoss();
