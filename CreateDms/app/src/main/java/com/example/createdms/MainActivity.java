@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.createdms.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -19,11 +20,13 @@ public class MainActivity extends AppCompatActivity {
     private FragmentApplication fragmentApplication = new FragmentApplication();
     private FragmentNotice fragmentNotice = new FragmentNotice();
     private FragmentMyPage fragmentMyPage = new FragmentMyPage();
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.menu_bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
